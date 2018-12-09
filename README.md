@@ -1,4 +1,9 @@
-JNI with C
+# JNI with C and Cpp
+
+Java Native Interface or JNI allows native codes to be call in Java.
+This demo project is to showcase how to call "Hello World from C" and "Hello World from Cpp" in Java.
+
+## JNI with C
 
 1. Create HelloJNI.java
 2. Compile HelloJNI.java using command "javac -h . HelloJNI.java" and check output HelloJNI.h
@@ -8,8 +13,11 @@ JNI with C
 6. Compile the HelloJNI.c into dynamic share module libhello.dylib using gcc with command "gcc -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/darwin" -dynamiclib -o libhello.dylib HelloJNI.c"
 7. Run project "java HelloJNI" 
 
-JNI with Cp
+## JNI with Cpp
 1. Repeat step 1 to 2 in "JNI with C"p
 2. Create HelloJNI.cpp
 3. Compile the HelloJNI.cpp with command "gcc -I"$JAVA_HOME/include" -I"$JAVA_HOME/include/darwin" -lstdc++ -dynamiclib -o libhello.dylib HelloJNI.cpp"
 4. Run project "java HelloJNI"
+
+## References
+https://www3.ntu.edu.sg/home/ehchua/programming/java/JavaNativeInterface.html
