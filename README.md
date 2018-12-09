@@ -1,4 +1,4 @@
-# JNI_with_c_and_cpp
+# JNI with C and Cpp
 
 Java Native Interface or JNI allows native codes to be call in Java.
 This demo project is to showcase how to call "Hello World from C" and "Hello World from Cpp" in Java.
